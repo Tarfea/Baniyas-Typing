@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="BANIYAS TYPING LLC - Trusted typing and business service center in Baniyas, Abu Dhabi, UAE since 1997.">
+    <title>BANIYAS TYPING LLC - Professional Business Services in UAE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #003366, #002244);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            opacity: 1;
+        }
+
+        #preloader.fade-out {
+            opacity: 0;
+            pointer-events: none;
+            transform: scale(1.2);
+        }
+
+        .loader-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-loader {
+            width: 80px;
+            height: 80px;
+            background: url('assets/logo.png') center/contain no-repeat;
+            animation: pulse 2s infinite;
+        }
+
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(255, 215, 0, 0.3);
+            border-top: 5px solid #FFD700;
+            border-radius: 50%;
+            display: inline-block;
+            box-sizing: border-box;
+            animation: rotation 1s linear infinite;
+        }
+
+        .loading-text {
+            color: #FFD700;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            animation: fadeInOut 1.5s infinite;
+        }
+
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        /* Feature detection for JavaScript */
+        .no-js {
+            display: none;
+        }
+
+        .js .no-js {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Feature detection for JavaScript -->
+    <script>
+        document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');
+    </script>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="logo-loader"></div>
+            <span class="loader"></span>
+            <div class="loading-text">LOADING...</div>
+        </div>
+    </div>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="BANIYAS TYPING LLC Logo" class="logo-img">
+                    <span class="company-name">BANIYAS TYPING LLC</span>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Toggle navigation">
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#branches">Branches</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-contact">
+                    <a href="tel:+971505928592" class="contact-icon" aria-label="Call us">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://wa.me/971505928592" target="_blank" class="contact-icon"
+                        aria-label="Message us on WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://maps.app.goo.gl/Zmi6tRm2PKzPfqZA6" target="_blank" class="contact-icon"
+                        aria-label="Find us on map">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                    <a href="mailto:baniyastc@gmail.com" class="contact-icon" aria-label="Email us">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Trusted Business Services Since 1997</h1>
+                <p>BANIYAS TYPING LLC provides comprehensive typing and business services across multiple branches in
+                    Baniyas, Abu Dhabi, UAE.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
+                    <a href="#services" class="btn btn-secondary">View Services</a>
+                    <a href="#branches" class="btn btn-secondary">Visit Branches</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Overview Section -->
+    <section class="company-overview">
+        <div class="container">
+            <h2>About BANIYAS TYPING LLC</h2>
+            <p>With over 25 years of experience, BANIYAS TYPING LLC has been a trusted provider of professional typing
+                and business services in Baniyas, Abu Dhabi, UAE. We operate 3 typing centers and 1 travel agency,
+                serving individuals and businesses with reliable and efficient solutions.</p>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section id="branches" class="branches-section">
+        <div class="container">
+            <h2>Our Locations</h2>
+            <div class="branches-grid">
+                <div class="branch-card">
+                    <div class="branch-image-container">
+                        <img src="assets/main1.png" alt="BANIYAS TYPING – Branch Location" class="branch-image">
+                    </div>
+                    <h3>BANIYAS TYPING</h3>
+                    <p class="branch-address">Baniyas West4, Near Unites School, Abu Dhabi, UAE</p>
+                    <div class="branch-contact">
+                        <a href="tel:+971503005371" class="contact-icon" aria-label="Call branch">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://wa.me/971503005371" target="_blank" class="contact-icon"
+                            aria-label="Message branch on WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://maps.app.goo.gl/Zmi6tRm2PKzPfqZA6" target="_blank" class="contact-icon"
+                            aria-label="Find branch on map">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                        <a href="mailto:baniyastcbr@gmail.com" class="contact-icon" aria-label="Email branch">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="branch-card">
+                    <div class="branch-image-container">
+                        <img src="assets/branch1.png" alt="BANIYAS TYPING – Branch Location" class="branch-image">
+                    </div>
+                    <h3>BANIYAS TYPING – Branch</h3>
+                    <p class="branch-address">Baniyas, Inside Zenith Supermarket, Abu Dhabi, UAE</p>
+                    <div class="branch-contact">
+                        <a href="tel:+971503005371" class="contact-icon" aria-label="Call branch">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://wa.me/971503005371" target="_blank" class="contact-icon"
+                            aria-label="Message branch on WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://maps.app.goo.gl/9CaGTXkWGRTm8f1x8" target="_blank" class="contact-icon"
+                            aria-label="Find branch on map">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                        <a href="mailto:baniyastcbr@gmail.com" class="contact-icon" aria-label="Email branch">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="branch-card">
+                    <div class="branch-image-container">
+                        <img src="assets/tarheel1.png" alt="TARHEEL TYPING Location" class="branch-image">
+                    </div>
+                    <h3>TARHEEL TYPING</h3>
+                    <p class="branch-address">Baniyas East, Near Lulu Hypermarket, Abu Dhabi, UAE</p>
+                    <div class="branch-contact">
+                        <a href="tel:+971556165424" class="contact-icon" aria-label="Call branch">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://wa.me/971556165424" target="_blank" class="contact-icon"
+                            aria-label="Message branch on WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://maps.app.goo.gl/1krL8CuSU3R5MJuq6" target="_blank" class="contact-icon"
+                            aria-label="Find branch on map">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                        <a href="mailto:tarheeltyp@gmail.com" class="contact-icon" aria-label="Email branch">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="branch-card">
+                    <div class="branch-image-container">
+                        <img src="assets/tarfea1.jpeg" alt="TARFEA TYPING Location" class="branch-image">
+                    </div>
+                    <h3>TARFEA TYPING</h3>
+                    <p class="branch-address">Baniyas East – YasMart, Near Tadbeer, Abu Dhabi, UAE</p>
+                    <div class="branch-contact">
+                        <a href="tel:+971524191586" class="contact-icon" aria-label="Call branch">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://wa.me/971524191586" target="_blank" class="contact-icon"
+                            aria-label="Message branch on WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://maps.app.goo.gl/ucjxBrUQBTauoqhr5" target="_blank" class="contact-icon"
+                            aria-label="Find branch on map">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                        <a href="mailto:tarfeatyp@gmail.com" class="contact-icon" aria-label="Email branch">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="branch-card">
+                    <div class="branch-image-container">
+                        <img src="assets/travels.png" alt="TARFEA TRAVELS Location" class="branch-image">
+                    </div>
+                    <h3>TARFEA TRAVELS</h3>
+                    <p class="branch-address">Baniyas West4, Near Unites School, Abu Dhabi, UAE</p>
+                    <div class="branch-contact">
+                        <a href="tel:+971502114185" class="contact-icon" aria-label="Call branch">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://wa.me/971502114185" target="_blank" class="contact-icon"
+                            aria-label="Message branch on WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://maps.app.goo.gl/iuzpgSLKcm1rz6JH8" target="_blank" class="contact-icon"
+                            aria-label="Find branch on map">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                        <a href="mailto:tarfeatravels101@gmail.com" class="contact-icon" aria-label="Email branch">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-categories">
+                <div class="service-category">
+                    <h3>Business Services</h3>
+                    <ul class="services-list">
+                        <li><i class="fas fa-briefcase service-icon"></i> Business Setup</li>
+                        <li><i class="fas fa-building service-icon"></i> 100% Ownership Licences</li>
+                        <li><i class="fas fa-user-tie service-icon"></i> Freelance Licences</li>
+                        <li><i class="fas fa-cogs service-icon"></i> PRO Services</li>
+                        <li><i class="fas fa-globe service-icon"></i> Online Licences</li>
+                        <li><i class="fas fa-passport service-icon"></i> Tasheel</li>
+                    </ul>
+                </div>
+
+                <div class="service-category">
+                    <h3>Government & Legal Services</h3>
+                    <ul class="services-list">
+                        <li><i class="fas fa-id-card service-icon"></i> Emirates ID</li>
+                        <li><i class="fas fa-shield-alt service-icon"></i> Civil Defence</li>
+                        <li><i class="fas fa-car service-icon"></i> Driving Licence</li>
+                        <li><i class="fas fa-certificate service-icon"></i> Certificate Attestation</li>
+                        <li><i class="fas fa-balance-scale service-icon"></i> Judicial Services</li>
+                    </ul>
+                </div>
+
+                <div class="service-category">
+                    <h3>Personal Services</h3>
+                    <ul class="services-list">
+                        <li><i class="fas fa-keyboard service-icon"></i> Typing Works</li>
+                        <li><i class="fas fa-envelope-open-text service-icon"></i> Letter Typing</li>
+                        <li><i class="fas fa-file-alt service-icon"></i> CV Creation</li>
+                        <li><i class="fas fa-language service-icon"></i> Translation</li>
+                        <li><i class="fas fa-ticket-alt service-icon"></i> Smart Pass</li>
+                        <li><i class="fas fa-stamp service-icon"></i> Stamps & Seals</li>
+                        <li><i class="fas fa-copy service-icon"></i> Photocopying</li>
+                    </ul>
+                </div>
+
+                <div class="service-category">
+                    <h3>Immigration & Travel Services</h3>
+                    <ul class="services-list">
+                        <li><i class="fas fa-passport service-icon"></i> Immigration</li>
+                        <li><i class="fas fa-shield-virus service-icon"></i> Daman Insurance</li>
+                        <li><i class="fas fa-money-bill-wave service-icon"></i> Fine Payments</li>
+                        <li><i class="fas fa-car-side service-icon"></i> Vehicle Registration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Partners Section -->
+    <section class="partners-section">
+        <div class="container">
+            <h2>Trusted Partners</h2>
+            <div class="partners-carousel">
+                <div class="partners-track">
+                    <!-- Logos will be duplicated for seamless looping -->
+                    <div class="partner-logo" data-partner="1">
+                        <img src="assets/partner1.png" alt="Partner 1">
+                    </div>
+                    <div class="partner-logo" data-partner="2">
+                        <img src="assets/brand1.png" alt="Partner 2">
+                    </div>
+                    <div class="partner-logo" data-partner="3">
+                        <img src="assets/brand2.png" alt="Partner 3">
+                    </div>
+                    <div class="partner-logo" data-partner="4">
+                        <img src="assets/brand3.png" alt="Partner 4">
+                    </div>
+                    <!-- Additional logos will be added here -->
+                    <!-- Duplicate set for seamless looping -->
+                    <div class="partner-logo" data-partner="1">
+                        <img src="assets/brand4.png" alt="Partner 1">
+                    </div>
+                    <div class="partner-logo" data-partner="2">
+                        <img src="assets/partner1.png" alt="Partner 2">
+                    </div>
+                    <div class="partner-logo" data-partner="3">
+                        <img src="assets/brand3.png" alt="Partner 3">
+                    </div>
+                    <div class="partner-logo" data-partner="4">
+                        <img src="assets/brand1.png" alt="Partner 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <header class="section-header">
+                <h2>Client Testimonials</h2>
+                <p class="section-description">Hear what our satisfied clients have to say about our services</p>
+            </header>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">BANIYAS TYPING LLC helped me set up my business in UAE with exceptional
+                        service. Their team was knowledgeable and efficient throughout the entire process.</p>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="client-details">
+                            <h4 class="client-name">Ahmed K.</h4>
+                            <p class="client-title">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">I've been using their typing services for years. They're reliable, fast,
+                        and always deliver quality work. Highly recommended!</p>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="client-details">
+                            <h4 class="client-name">Fatima M.</h4>
+                            <p class="client-title">Regular Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Their travel agency made my visa process smooth and hassle-free.
+                        Professional service from start to finish.</p>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="client-details">
+                            <h4 class="client-name">Mohammed R.</h4>
+                            <p class="client-title">Travel Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon
+                        as possible.</p>
+                </div>
+
+                <div class="contact-content-simple">
+                    <!-- Contact Information -->
+                    <div class="contact-info-simple">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <a href="https://maps.app.goo.gl/Zmi6tRm2PKzPfqZA6" target="_blank"
+                                    aria-label="Find branch on map">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </a>
+                            </div>
+                            <div class="info-details">
+                                <h4>Our Location</h4>
+                                <p>Baniyas, Abu Dhabi, UAE</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-details">
+                                <h4>Phone Number</h4>
+                                <p><a href="tel:+971505928592">+971 50 592 8592</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-details">
+                                <h4>Email Address</h4>
+                                <p><a href="mailto:baniyastc@gmail.com">baniyastc@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="info-details">
+                                <h4>WhatsApp</h4>
+                                <p><a href="https://wa.me/971505928592" target="_blank">Chat with us</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-simple">
+                        <form id="contactForm" class="simple-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone (Optional)">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#branches">Branches</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-branches">
+                    <h4>Our Branches</h4>
+                    <ul>
+                        <li>BANIYAS TYPING</li>
+                        <li>BANIYAS TYPING – Branch</li>
+                        <li>TARHEEL TYPING</li>
+                        <li>TARFEA TYPING</li>
+                        <li>TARFEA TRAVELS</li>
+                    </ul>
+                </div>
+
+                <div class="social-media">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 1997–2025 BANIYAS TYPING LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
