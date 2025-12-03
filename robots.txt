@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://baniyastyping.com/sitemap.xml
+Host: https://baniyastyping.com
